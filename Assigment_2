@@ -1,1 +1,17 @@
 ## This will include some additional set up details as needed for ETL processing in addition to Assignment 1
+
+
+1. Loading the data sets from local machine to s3 bucket
+  
+  1.1 Download the data set from Kaggle
+      Save it in a folder  
+
+2. Load the data 
+  
+  2.1 Create subfolders in s3 and Copy all json files from local to s3 in one folder
+      
+       Open the cmd terminal and navigate to the directory where data is saved
+       Type the following command: aws s3 cp . s3://bucketname/foldername/raw_statistics_reference_data/ --recursive --exclude "*" --include "*.json" 
+                                   aws s3 cp . s3://ade-project-shirish/youtube/raw_statistics_reference_data/ --recursive --exclude "*" --include "*.json"
+
+  
