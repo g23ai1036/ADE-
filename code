@@ -1,0 +1,1 @@
+aws s3 cp . s3://ade-project-shirish/youtube/raw_statistics_reference_data/ --recursive --exclude "*" --include "*.json"
