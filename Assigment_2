@@ -8,10 +8,36 @@
 
 2. Load the data 
   
-  2.1 Create subfolders in s3 and Copy all json files from local to s3 in one folder
+  2.1 Create a folder and subfolder in s3 and Copy all json files from local to s3 in the subfloder
       
        Open the cmd terminal and navigate to the directory where data is saved
        Type the following command: aws s3 cp . s3://bucketname/foldername/raw_statistics_reference_data/ --recursive --exclude "*" --include "*.json" 
                                    aws s3 cp . s3://ade-project-shirish/youtube/raw_statistics_reference_data/ --recursive --exclude "*" --include "*.json"
 
+      This does the following:
+        Create a folder named youtube
+        Create a Subfolder named raw_Statistics_reference_data
+        Copies all the files with .jason extension from local directory to the subfolder
+        
+        
+
+
+2.2 # To copy all data files run the following commands:
+
   
+          aws s3 cp CAvideos.csv s3://ade-project-shirish/youtube/raw_statistics/region=ca/
+          aws s3 cp DEvideos.csv s3://ade-project-shirish/youtube/raw_statistics/region=de/
+          aws s3 cp FRvideos.csv s3://ade-project-shirish/youtube/raw_statistics/region=fr/
+          aws s3 cp GBvideos.csv s3://ade-project-shirish/youtube/raw_statistics/region=gb/
+          aws s3 cp INvideos.csv s3://ade-project-shirish/youtube/raw_statistics/region=in/
+          aws s3 cp JPvideos.csv s3://ade-project-shirish/youtube/raw_statistics/region=jp/
+          aws s3 cp KRvideos.csv s3://ade-project-shirish/youtube/raw_statistics/region=kr/
+          aws s3 cp MXvideos.csv s3://ade-project-shirish/youtube/raw_statistics/region=mx/
+          aws s3 cp RUvideos.csv s3://ade-project-shirish/youtube/raw_statistics/region=ru/
+          aws s3 cp USvideos.csv s3://ade-project-shirish/youtube/raw_statistics/region=us/
+
+    These commands do the following:
+      Create a subfolder raw_statistics in youtube folder
+      create a separate subfolder for each region and copy the respective file to the respective subfolder
+      upload all the .csv files 
+
