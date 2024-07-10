@@ -32,7 +32,12 @@ Will be supported with the screenshots as applicable
     leave default output format as is (blank) an press enter
     once configured - can check s3 buckets using command "aws s3 ls"
     
-  
+ 3. S3 Bucket Creation
+    launch s3 
+    create bucket
+    enter bucket name
+    enable server side encryption
+    leave rest of the settings as default and create the bucket
 
 
   
