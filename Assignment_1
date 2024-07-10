@@ -1,0 +1,28 @@
+## Cloud Set ups 
+This captures the steps followed in setting up the AWS moduled covered in class
+Will be supported with the screenshots as applicable
+
+1. IAM User
+1.1 Login with the root user
+    Launch IAM Service Module
+    Create User
+    provide user name
+    Select "Provide user access to the AWS Management Console"
+    Select "I want to create an IAM user"
+    Select "Custom Password"
+    Select "Attach Policies" on next page
+    Select "AdministratorAccess" option
+    Create user on the next page
+    Download csv file with credentials
+1.2
+  Once user is created
+  Select the user from dashborad
+  Select "Security Credentials" from top right Account section
+  Create Access Key
+  Download csv file with accesskeys
+  Download and save 
+  Needed for CLI
+  
+
+
+  
