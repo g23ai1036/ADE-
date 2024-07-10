@@ -22,6 +22,16 @@ Will be supported with the screenshots as applicable
   Download csv file with accesskeys
   Download and save 
   Needed for CLI
+
+
+2. AWS CLI Console Set up
+    Download and Install - AWS CLI for windows 
+    launch CMD terminal and type "aws configure"
+    enter the access key ID and secret access key from the file downloaded
+    select the default region name
+    leave default output format as is (blank) an press enter
+    once configured - can check s3 buckets using command "aws s3 ls"
+    
   
 
 
