@@ -41,3 +41,30 @@
       create a separate subfolder for each region and copy the respective file to the respective subfolder
       upload all the .csv files 
 
+3. AWS Glue
+
+3.1 Add Crawler  
+    Launch Glue
+    Create Crawler
+    Give a name
+    Add a data source
+      Browse s3 path
+      Select reference data folder with the project, which has a group of jason files
+    Select crawl all subfloders 
+      - Crawler will pull the meta data from all the subfolders in S3 and table them in data catalog
+  3.1.1 Add IAM role
+        Launch IAM
+        Create a new role
+        Assign S3 Full services - crawler will run through s3 folders and pull the meta data from all to table the in a data catalog
+        Queries can be run on the data catalog then
+        Open the role link and attach policy to add another policy to access GlueService role   
+        Once created, come back to crawler and select the role in crawler creation
+
+  3.1.2 Add a data base
+        Database needs to be added for glue to store the metadata after scanning through the s3 buckets and pulling the meta data
+        once created, refresh and select the database
+
+go to the next tab and create the crawler
+
+    
+      
