@@ -63,8 +63,18 @@
   3.1.2 Add a data base
         Database needs to be added for glue to store the metadata after scanning through the s3 buckets and pulling the meta data
         once created, refresh and select the database
+        go to the next tab and create the crawler
 
-go to the next tab and create the crawler
+  3.1.3  Run the crawler
+        Running the crawler created the following:
+          1.  A database in data catalog
+          2.  A table 
 
+  3.1.4 View the table in data catalog launches Athena 
+        Running the query in query editor gave the following error message:
+        " HIVE_CURSOR_ERROR: Row is not a valid JSON Object - JSONException: A JSONObject text must end with '}' at 2 [character 3 line 1]"
+
+
+ 
     
       
