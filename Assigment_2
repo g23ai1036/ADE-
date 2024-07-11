@@ -74,6 +74,22 @@
         Running the query in query editor gave the following error message:
         " HIVE_CURSOR_ERROR: Row is not a valid JSON Object - JSONException: A JSONObject text must end with '}' at 2 [character 3 line 1]"
 
+4. Lamda 
+    4.1 Create Lambda Function
+        Name the function
+        Select Python 3.8 runtime for execution
+
+  4.2 Create a Role 
+      Launch IAM
+      Create a new role 
+      chose the service as lambda
+      select policy as "s3fullaccess"
+      next and create role
+
+  
+
+    
+        
 
  
     
