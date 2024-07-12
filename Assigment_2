@@ -74,12 +74,17 @@
         Running the query in query editor gave the following error message:
         " HIVE_CURSOR_ERROR: Row is not a valid JSON Object - JSONException: A JSONObject text must end with '}' at 2 [character 3 line 1]"
 
-4. Lamda 
-    4.1 Create Lambda Function
+4 Athena
+    Launched when viewing the table in glue data catalog
+    before you run a query in athena you need to set up a query result location in s3
+
+
+5. Lamda 
+    5.1 Create Lambda Function
         Name the function
         Select Python 3.8 runtime for execution
 
-  4.2 Create a Role 
+  5.2 Create a Role 
       Launch IAM
       Create a new role 
       chose the service as lambda
