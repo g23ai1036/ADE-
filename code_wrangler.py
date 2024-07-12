@@ -6,7 +6,7 @@ import os
 
 ## Environment Variables
 os_input_s3_cleansed_layer = os.environ['s3_cleansed_layer'] ##  s3_cleansed_layer: S3 path where the cleaned data will be stored.
-os_input_glue_catalog_db_name = os.environ['glue_catalog_db_name ## glue_catalog_db_name: AWS Glue Catalog database name
+os_input_glue_catalog_db_name = os.environ['glue_catalog_db_name'] ## glue_catalog_db_name: AWS Glue Catalog database name
 os_input_glue_catalog_table_name = os.environ['glue_catalog_table_name'] ## glue_catalog_table_name : AWS Glue Catalog table name.
 os_input_write_data_operation = os.environ['write_data_operation'] ## write_data_operation : Write operation mode (e.g., 'overwrite' or 'append').
 
